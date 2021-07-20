@@ -22,3 +22,18 @@ function updateRate()
     document.getElementById("rate_val").innerText=rateval;
 }
 
+
+function checkdata()
+{
+    var principal = document.getElementById("principal");
+
+    if (principal.value <= 0){
+        alert("Please enter a positive");
+        principal.focus();
+        return false;
+    }
+
+    return true;
+}
+
+
